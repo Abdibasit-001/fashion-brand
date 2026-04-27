@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important ;
+
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #06203d;
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1000;
+    height: 15vh;
+}
+
+
+.navbar h1{
+    color: #fff;
+    font-size: 34px;
+
+}
+.navbar h1 .span{
+    color: #06203d;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 15px;
+   
+}
+.navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.navbar ul li a:hover{
+    color: #06203d;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transform: translateY(-5px) scale(1.0);
+}
+
+.hero{
+    height: 100vh;
+    background-image: url(/bgnova.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-attachment: scroll;
+    
+
+
+}
+.hero .hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hero .hero-content h1{
+    color: #06203d;
+    font-size: 48px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+.hero .hero-content p{
+    color:#06203d;
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+.featured-clothes{
+    padding: 50px 80px;
+    background-color: #f5f5f5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.featured-clothes h2{
+    color: #06203d;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.featured-clothes .clothes-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+   
+
+   
+
+}
+.featured-clothes .clothes-container .clothes-child{
+    flex: 1 1 calc(25% - 20px);
+    background-color: #bac9ed;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(19, 2, 19);
+     transition: transform 0.3s ease;
+    cursor: pointer;
+ 
+
+
+    
+}
+.featured-clothes .clothes-child:hover{
+    transform:  translateY(-10px) scale(1.03);
+    box-shadow: 0 5px 8px blue;
+}
+
+.featured-clothes .clothes-container .clothes-child img{
+    border-radius: 8px;
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+
+}
+.featured-clothes .clothes-container .clothes-child h3{
+    padding: 10px;
+}
+.featured-clothes .clothes-container .clothes-child p{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.featured-clothes .clothes-container .clothes-child button {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #06203d ;
+    color: #fff;
+    font-weight: 700;
+}
+.footer{
+    background-color: #06203d;
+    height: 10vh;
+    padding: 20px;
+    text-align: center;
+
+}
+.footer p{
+    color: #fff;
+    bottom: 0;
+   
+}
+
+/* about page stylings */
+
+.about-hero{
+    height: 50vh;
+    background-image: url(/novabg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-attachment: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 98px;
+}
+.hero-overlay{
+    background-color: rgba(237, 235, 235, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+.hero-overlay h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-overlay p {
+    font-size: 18px;
+}
+.about-nova{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.about-child{
+    background-color: #bac9ed;
+    height: 250px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px black;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+}
+.about-child:hover{
+    transform:  translateY(-10px) scale(1.03);
+    box-shadow: 0 5px 8px blue;
+}
+.about-child h2{
+    padding: 10px;
+    font-size: 25px;
+    text-shadow: 0 5px 5px rgb(11, 112, 184);
+    font-weight: 700;
+}
+.about-child p{
+    padding: 6px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* men's products page styles */
+.men-products{
+    padding:  50px 80px ;
+    text-align: center;
+    margin-top: 90px;
+}
+.men-products h2{
+    color: #06203d;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+
+
+}
+.product-card{
+    background-color: #bac9ed;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 2px 5px rgb(19, 2, 19);
+      transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.product-card:hover{
+    transform: translateY(-10px) scale(1.03);
+}
+.product-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.women-products{
+    padding: 50px 80px;
+    text-align: center;
+    margin-top: 90px;
+
+}
+.women-products h2 {
+    color: #06203d;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.women-products p{
+    color: #06203d;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.women-product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.women-product-card{
+    background-color: #bac9ed;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 2px 5px rgb(19, 2, 19);
+    transition: transform 0.3s ease;
+    cursor: pointer
+}
+.women-product-card:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 5px 8px rgb(9, 22, 211);
+    
+}
+.women-product-card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+}
